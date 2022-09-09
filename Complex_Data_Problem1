@@ -1,0 +1,40 @@
+# 1.a Create a list of integers no fewer than 10 items from 0 to 9.
+# .b Add 3 to the 5th indexed element
+ #.c Coerce all elements in the list to floats using list comprehension
+ #.d Coerce the list to a set
+ #.e Using a method, append int 10 to the set
+ #.f Using a method, pop an item from the set
+ #.g Using a length counting function, count the number of items in the set
+ #.h Check if the number of items in the set is the same as the
+ #   number of items in the list
+ #.i Coerce the set to a list and use the "+" operator combine the list to the list from 1.a
+ #.j Coerce 1.i to a set
+ #.k Count the number of elements in the 1.j
+
+
+one_a = [1,3,4,2,7,6,0,5,8,9]
+one_b = one_a[5] + 3
+# for one B do you want us to amend the list for the fifth, or just select the fifth and add
+one_c = []
+for item in one_a:
+    one_c.append(float(item))
+one_d = set(one_a)
+# sets do not have duplicates, so one integer was deleted in one D
+# For one E, appending the original list then setting one E equal to appended one A
+one_a.append(10)
+one_e = one_a
+#For one F, I was unsure if the variable should be what was removed or what was left, so I created both variables
+#Because it didn't specify which to pop, I removed the last variable, but could have chosen another by indicating index in the pop parentheses
+one_f_removed = one_a.pop()
+one_f_remaining= one_a
+# Using the remaining set from part f
+one_g = len(one_f_remaining)
+#one h
+#print(len(one_a) == len(one_f_remaining))
+one_i_list = list(one_f_remaining)
+one_i = one_i_list + one_a
+one_j = set(one_i)
+one_k = len(one_j)
+
+
+
