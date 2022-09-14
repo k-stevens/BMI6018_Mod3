@@ -136,7 +136,7 @@ one_b = one_a.copy()
 one_b.insert(5,3)
 # this is based on what we were told on the discussion board
 
-#using the items in list in one_a, not including the insertion from one_b
+#using the items in list in one_a, not including the insertion from one_b from here down
 one_c = []
 for item in one_a:
     one_c.append(float(item))
